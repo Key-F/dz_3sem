@@ -1,0 +1,14 @@
+c:\users\keyf\documents\visual studio 2013\Projects\SteamBot\SteamBot\bin\Debug\SteamBot.exe.config
+c:\users\keyf\documents\visual studio 2013\Projects\SteamBot\SteamBot\obj\Debug\SteamBot.csprojResolveAssemblyReference.cache
+c:\users\keyf\documents\visual studio 2013\Projects\SteamBot\SteamBot\obj\Debug\SteamBot.Form1.resources
+c:\users\keyf\documents\visual studio 2013\Projects\SteamBot\SteamBot\obj\Debug\SteamBot.Properties.Resources.resources
+c:\users\keyf\documents\visual studio 2013\Projects\SteamBot\SteamBot\obj\Debug\SteamBot.csproj.GenerateResource.Cache
+C:\Users\keyf\documents\visual studio 2013\Projects\SteamBot\SteamBot\bin\Debug\SteamBot.exe
+C:\Users\keyf\documents\visual studio 2013\Projects\SteamBot\SteamBot\bin\Debug\SteamBot.pdb
+C:\Users\keyf\documents\visual studio 2013\Projects\SteamBot\SteamBot\bin\Debug\protobuf-net.dll
+C:\Users\keyf\documents\visual studio 2013\Projects\SteamBot\SteamBot\bin\Debug\SteamKit2.dll
+C:\Users\keyf\documents\visual studio 2013\Projects\SteamBot\SteamBot\bin\Debug\protobuf-net.pdb
+C:\Users\keyf\documents\visual studio 2013\Projects\SteamBot\SteamBot\bin\Debug\protobuf-net.xml
+C:\Users\keyf\documents\visual studio 2013\Projects\SteamBot\SteamBot\bin\Debug\SteamKit2.xml
+C:\Users\keyf\documents\visual studio 2013\Projects\SteamBot\SteamBot\obj\Debug\SteamBot.exe
+C:\Users\keyf\documents\visual studio 2013\Projects\SteamBot\SteamBot\obj\Debug\SteamBot.pdb
