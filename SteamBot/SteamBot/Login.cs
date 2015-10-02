@@ -19,13 +19,18 @@ namespace SteamBot
 
             static string user, pass;
 
-            public static void Enter_(string us, string pa)
+            static ToolStripLabel tlb;
+
+           // static string toptlb;
+
+            public static void Enter_(string us, string pa, ToolStripLabel tlb_)
             {
                 user = us;
                 pass = pa;
+                tlb = tlb_;
                 if ((user.Length < 2) || (pass.Length < 2))
                 {
-                    MessageBox.Show("No username and password specified!");
+                    tlb.Text ="No username and password specified!";
                     return;
                 }
 
@@ -48,8 +53,8 @@ namespace SteamBot
 
                 isRunning = true;
 
-                //toolStripStatusLabel1.Text = "yolo";
-                MessageBox.Show("Connecting to Steam...");
+                tlb.Text = "Connecting to Steam...";
+                
 
                 // initiate the connection
                 steamClient.Connect();
@@ -66,13 +71,12 @@ namespace SteamBot
             {
                 if (callback.Result != EResult.OK)
                 {
-                    MessageBox.Show("Unable to connect to Steam");
-                   // toolStripStatusLabel1.Text("Unable to connect to Steam");
+                    tlb.Text ="Unable to connect to Steam";
                     isRunning = false;
                     return;
                 }
 
-                MessageBox.Show("Connected to Steam! Logging in", user);
+               // tlb.Text ="Connected to Steam! Logging in";
 
                 steamUser.LogOn(new SteamUser.LogOnDetails
                 {
@@ -83,7 +87,7 @@ namespace SteamBot
 
             static void OnDisconnected(SteamClient.DisconnectedCallback callback)
             {
-                MessageBox.Show("Disconnected from Steam");
+                tlb.Text ="Disconnected from Steam";
 
                 isRunning = false;
             }
@@ -98,19 +102,19 @@ namespace SteamBot
                         // then the account we're logging into is SteamGuard protected
                         // see sample 5 for how SteamGuard can be handled
 
-                        MessageBox.Show("Unable to logon to Steam: This account is SteamGuard protected.");
+                        tlb.Text ="Unable to logon to Steam: This account is SteamGuard protected.";
 
                         isRunning = false;
                         return;
                     }
 
-                    MessageBox.Show("Unable to logon to Steam");
+                    tlb.Text ="Unable to logon to Steam";
 
                     isRunning = false;
                     return;
                 }
 
-                MessageBox.Show("Successfully logged on!");
+                tlb.Text ="Successfully logged on!";
 
                 // at this point, we'd be able to perform actions on Steam
 
@@ -120,7 +124,7 @@ namespace SteamBot
 
             static void OnLoggedOff(SteamUser.LoggedOffCallback callback)
             {
-                MessageBox.Show("Logged off of Steam");
+                tlb.Text ="Logged off of Steam";
             }
         }
     }

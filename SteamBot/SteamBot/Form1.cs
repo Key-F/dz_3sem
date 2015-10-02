@@ -36,7 +36,7 @@ namespace SteamBot
         {
        
             //Login newLogin = new Login();
-            Login.Enter_(textBox1.Text, textBox2.Text); 
+            Login.Enter_(textBox1.Text, textBox2.Text, toolStripStatusLabel1); 
             
         }
 
