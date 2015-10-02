@@ -10,6 +10,7 @@ namespace SteamBot
        public  class Login : Form1
         {
             static SteamClient steamClient;
+
             static CallbackManager manager;
 
             static SteamUser steamUser;
@@ -18,22 +19,13 @@ namespace SteamBot
 
             static string user, pass;
 
-
             public static void Enter_(string us, string pa)
             {
-              //  user = this.user;
-               // pass = this.pass;
-
-                // save our logon details
-              //  var user = getlogin;
-              //  var pass = textBox2.Text;
                 user = us;
                 pass = pa;
-                MessageBox.Show(user, pass);
-
                 if ((user.Length < 2) || (pass.Length < 2))
                 {
-                    MessageBox.Show("Sample1: No username and password specified!");
+                    MessageBox.Show("No username and password specified!");
                     return;
                 }
 
@@ -56,6 +48,7 @@ namespace SteamBot
 
                 isRunning = true;
 
+                //toolStripStatusLabel1.Text = "yolo";
                 MessageBox.Show("Connecting to Steam...");
 
                 // initiate the connection
@@ -74,7 +67,7 @@ namespace SteamBot
                 if (callback.Result != EResult.OK)
                 {
                     MessageBox.Show("Unable to connect to Steam");
-
+                   // toolStripStatusLabel1.Text("Unable to connect to Steam");
                     isRunning = false;
                     return;
                 }

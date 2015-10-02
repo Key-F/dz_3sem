@@ -126,7 +126,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "SteamBot";
-            this.TransparencyKey = System.Drawing.Color.Transparent;
+            this.TransparencyKey = System.Drawing.Color.Maroon;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -145,8 +145,8 @@
         private System.Windows.Forms.Button button1;
         public System.Windows.Forms.TextBox textBox1;
         public System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.StatusStrip statusStrip2;
         public System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        public System.Windows.Forms.StatusStrip statusStrip2;
 
     }
 }
