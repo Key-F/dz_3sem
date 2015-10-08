@@ -12,3 +12,4 @@ C:\Users\keyf\documents\visual studio 2013\Projects\SteamBot\SteamBot\bin\Debug\
 C:\Users\keyf\documents\visual studio 2013\Projects\SteamBot\SteamBot\bin\Debug\SteamKit2.xml
 C:\Users\keyf\documents\visual studio 2013\Projects\SteamBot\SteamBot\obj\Debug\SteamBot.exe
 C:\Users\keyf\documents\visual studio 2013\Projects\SteamBot\SteamBot\obj\Debug\SteamBot.pdb
+C:\Users\keyf\documents\visual studio 2013\Projects\SteamBot\SteamBot\obj\Debug\SteamBot.sgenter.resources

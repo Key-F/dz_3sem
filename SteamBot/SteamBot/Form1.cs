@@ -22,9 +22,8 @@ namespace SteamBot
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {
-           // toolStripStatusLabel1.Text = "00";   
-
+        {  
+            textBox2.SelectionStart = 0;
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -40,6 +39,11 @@ namespace SteamBot
             
         }
 
+       /* public string steamguard
+        {
+            get { return textBox1.Text; }
+            set { textBox1.Text = value; }
+        } */
        
     }
 }
